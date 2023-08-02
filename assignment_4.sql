@@ -42,8 +42,12 @@ VALUES ((1,'Chemistry',91),(1,'Physics',91),(1,'Maths',92)
 ,(4,'Chemistry',71),(4,'Physics',54)
 ,(5,'Chemistry',79));
 
+--to find total number of products in each category
+SELECT category, COUNT(DISTINCT product_id)
+FROM public.superstore_orders 
+GROUP BY category;
 
-
+--to find top 5 sub categories in west region by total quantity sold
 
 
 
