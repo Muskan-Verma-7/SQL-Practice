@@ -36,11 +36,11 @@ create table exams (student_id int, subject varchar(20), marks int);
 SELECT * FROM public.exams;
 
 INSERT INTO public.exams(student_id, subject, marks)
-VALUES ((1,'Chemistry',91),(1,'Physics',91),(1,'Maths',92)
+VALUES (1,'Chemistry',91),(1,'Physics',91),(1,'Maths',92)
 ,(2,'Chemistry',80),(2,'Physics',90)
 ,(3,'Chemistry',80),(3,'Maths',80)
 ,(4,'Chemistry',71),(4,'Physics',54)
-,(5,'Chemistry',79));
+,(5,'Chemistry',79);
 
 --to find total number of products in each category
 SELECT category, COUNT(DISTINCT product_id)
