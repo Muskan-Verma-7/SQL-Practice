@@ -71,7 +71,8 @@ values ('Ankit','West')
 ,('Vishal','Central')
 ,('Sanjay','South')
 
-
+SELECT * FROM exams
+WHERE student_id IN (1,2);
 
 
 
